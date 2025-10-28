@@ -14,18 +14,18 @@ from ecapture import ecapture as ec
 from fuzzywuzzy import fuzz
 
 # ---------- CONFIG ----------
-ASSISTANT_NAME = "Saket "  # <-- change this to Aarav / Sahyog / Pragya / Navin etc.
+ASSISTANT_NAME = "Saket " 
 WEATHER_API_KEY = "583604ad04dded0c7e9d3176cf046176"
 WOLFRAM_APP_ID = "57TG3XYT8Y"
 
-HF_API_TOKEN = None  # e.g. "hf_ABC..." or None to try anonymous (may be rate-limited)
+HF_API_TOKEN = None  # Set to your Hugging Face API token if available
 HF_CHAT_MODEL = "google/gemma-2b-it"  # recommended free model endpoint
 
 wolfram_client = wolframalpha.Client(WOLFRAM_APP_ID)
 
 NOTES_FILE = f"{ASSISTANT_NAME.lower()}_notes.txt"
 
-# ---------- TTS (robust) ----------
+# ---------- TTS ----------
 def speak(text):
     """Print + speak text. Reinitializes TTS engine each call to avoid 'one-shot' bug."""
     print(f"🧠 {ASSISTANT_NAME}: {text}")
