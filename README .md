@@ -221,22 +221,3 @@ Include screenshots or a short GIF in `/screenshots` (optional but recommended).
 
 ---
 
-## ✅ Quick Git commands
-
-```bash
-git add README.md voice_assistant.py requirements.txt
-git commit -m "Add README and Voice Assistant script"
-git push origin main
-```
-
----
-
-## Changelog (short)
-
-- General cleanup and bug fixes.
-- Configurable assistant display name (`ASSISTANT_NAME`) and standardized notes filename `assistant_notes.txt`.
-- Robust TTS initialization, fuzzy intent matching, and optional HF fallback.
-
----
-
-**Thank you — and remember to remove API keys before pushing to any remote repository.**
